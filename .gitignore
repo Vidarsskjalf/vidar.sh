@@ -1,0 +1,18 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log
+
+# Output directories
+bin/
+
+# tmp
+/tmp/
+
+#Tailwind output files
+static/css/output.css
+
+# MacOS metadata files
+.DS_store

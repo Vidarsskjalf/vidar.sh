@@ -7,18 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{.Title}}</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/static/css/style.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-    <h1>Vidar.sh</h1>
-    <header>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/projects">Projects</a>
+<body class="bg-gray-100 m-0 p-0">
+    <header class="bg-black text-white p-4">
+        <h1 class="text-4xl font-bold">Vidar.sh</h1>
+        <h1>System Administrator</h1>
+        <nav class="mt-2">
+            <a href="/" class="hover:underline mr-4">Home</a>
+            <a href="/projects" class="hover:underline">Projects</a>
         </nav>
     </header>
-    <main>
+    <main class="container mx-auto mt-8 p-8">
 
         {{if eq .Content "home"}}
         {{template "home" .}}
@@ -29,7 +37,7 @@
         {{end}}
 
     </main>
-    <footer>
+    <footer class="fixed inset-x-0 bottom-0 p-4 bg-black text-white text-center">
         <p>&copy; 2024</p>
     </footer>
 </body>
