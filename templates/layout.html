@@ -6,26 +6,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{.Title}}</title>
+    <link href="/static/css/fonts.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                }
-            }
+                    fontFamily: {
+                        custom: ['GeistMono'],
+                    },
+                },
+            },
         }
     </script>
 </head>
 
-<body class="bg-gray-100 m-0 p-0">
+<body class="font-custom bg-gray-400 m-0 p-0">
     <header class="bg-black text-white p-4">
         <h1 class="text-4xl font-bold">Vidar.sh</h1>
-        <h1>System Administrator</h1>
+        <h1>Systems Administrator</h1>
         <nav class="mt-2">
             <a href="/" class="hover:underline mr-4">Home</a>
-            <a href="/projects" class="hover:underline">Projects</a>
+            <a href="/projects" class="hover:underline mr-4">Projects</a>
+            <a href="https://github.com/vidarsskjalf" target="_blank" rel="noopener noreferrer" class="hover:underline mr-4">Github</a>
+            <a href="https://x.com/vidarsskjalf" target="_blank" rel="noopener noreferrer" class="hover:underline mr-4">X</a>
         </nav>
     </header>
+
     <main class="container mx-auto mt-8 p-8">
 
         {{if eq .Content "home"}}
@@ -37,6 +44,7 @@
         {{end}}
 
     </main>
+
     <footer class="fixed inset-x-0 bottom-0 p-4 bg-black text-white text-center">
         <p>&copy; 2024</p>
     </footer>

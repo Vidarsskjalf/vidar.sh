@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'GeistMono';
+    src: url('/static/fonts/GeistMono-Regular.woff2') format('woff2'),
+         url('/static/fonts/GeistMono-Regular.woff') format('woff');
+}
