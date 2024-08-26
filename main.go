@@ -1,14 +1,14 @@
 package main
 
 import (
-    "vidar.sh/server"
+	"log"
+	"vidar.sh/server"
 )
 
 func main() {
-    // Start server
-    svr := server.StartServer()
-
-    if err := srv.Start(); err != nil {
-        srv.Logger.Fatal("Error starting server: ", err)
-    }
+	// Start server
+	srv := server.NewServer(":8080")
+	if err := srv.Start(); err != nil {
+		log.Fatal(err)
+	}
 }
