@@ -15,21 +15,29 @@
                     fontFamily: {
                         custom: ['GeistMono'],
                     },
+                    colors: {
+                        'custom-color-base': '#232136',
+                        'custom-color-surface': '#1f1d2e',
+                        'custom-color-text': '#e0def4',
+                        'custom-color-foot': '#eb6f92',
+                    },
                 },
             },
         }
     </script>
 </head>
 
-<body class="font-custom bg-gray-400 m-0 p-0">
-    <header class="bg-black text-white p-4">
+<body class="font-custom bg-custom-color-base m-0 p-0">
+    <header class="bg-custom-color-surface text-custom-color-text p-4">
         <h1 class="text-4xl font-bold">Víðar.sh</h1>
         <h1>Systems Administrator</h1>
         <nav class="mt-2">
             <a href="/" class="hover:underline mr-4">Home</a>
             <a href="/projects" class="hover:underline mr-4">Projects</a>
-            <a href="https://github.com/vidarsskjalf" target="_blank" rel="noopener noreferrer" class="hover:underline mr-4">Github</a>
-            <a href="https://x.com/vidarsskjalf" target="_blank" rel="noopener noreferrer" class="hover:underline mr-4">X</a>
+            <a href="https://github.com/vidarsskjalf" target="_blank" rel="noopener noreferrer"
+                class="hover:underline mr-4">Github</a>
+            <a href="https://x.com/vidarsskjalf" target="_blank" rel="noopener noreferrer"
+                class="hover:underline mr-4">X</a>
         </nav>
     </header>
 
@@ -45,8 +53,8 @@
 
     </main>
 
-    <footer class="fixed inset-x-0 bottom-0 p-4 bg-black text-white text-center">
-        <p>&copy; 2024</p>
+    <footer class="fixed inset-x-0 bottom-0 p-4 bg-custom-color-surface text-custom-color-text text-center">
+        <p>&copy; made by <span class="underline text-custom-color-foot">@vidarsskjalf</span></p>
     </footer>
 </body>
 
