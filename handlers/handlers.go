@@ -7,14 +7,14 @@ import (
 
 func HomeHandler(c echo.Context) error {
 	return c.Render(http.StatusOK, "layout", map[string]interface{}{
-		"title":   "Home",
+		"Title":   "Home",
 		"Content": "home",
 	})
 }
 
 func ProjectsHandler(c echo.Context) error {
 	return c.Render(http.StatusOK, "layout", map[string]interface{}{
-		"title":   "Projects",
+		"Title":   "Projects",
 		"Content": "projects",
 	})
 }
