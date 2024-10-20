@@ -1,6 +1,6 @@
 module vidar.sh
 
-go 1.23.0
+go 1.23.2
 
 require github.com/labstack/echo/v4 v4.12.0
 
